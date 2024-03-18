@@ -1,0 +1,48 @@
+{
+  "name": "create-malagu",
+  "version": "0.1.0",
+  "keywords": [
+    "malagu"
+  ],
+  "description": "An easy way to start a Malagu project",
+  "type": "module",
+  "bin": {
+    "create-malagu": "index.js",
+    "cma": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build",
+    "publish": "clean-publish"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/minimist": "^1.2.5",
+    "@types/prompts": "^2.4.9",
+    "clean-publish": "^4.3.0",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "unbuild": "^2.0.0"
+  },
+  "homepage": "https://github.com/zhengxs2018/create-malagu#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengxs2018/create-malagu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhengxs2018/create-malagu/issues"
+  },
+  "engines": {
+    "node": ">=16.20.0"
+  },
+  "author": "zhengxs2018 <zhengxs2018@gmail.com>",
+  "license": "MIT"
+}

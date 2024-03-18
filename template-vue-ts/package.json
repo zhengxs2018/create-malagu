@@ -1,0 +1,26 @@
+{
+  "name": "vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "clean": "rimraf lib dist .malagu",
+    "build": "malagu build",
+    "start": "malagu serve",
+    "deploy": "malagu deploy -m scf -m test",
+    "deploy:test": "malagu deploy -m scf -m test",
+    "deploy:pre": "malagu deploy -m scf -m pre",
+    "deploy:prod": "malagu deploy -m scf -m prod"
+  },
+  "dependencies": {
+    "@malagu/core": "~2.55.3",
+    "@malagu/rpc": "~2.55.3",
+    "@malagu/vue": "~2.55.3",
+    "@malagu/serve-static": "~2.55.3",
+    "vue-router": "^4.3.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@malagu/cli": "~2.55.3"
+  },
+  "license": "MIT"
+}
